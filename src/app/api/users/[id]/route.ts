@@ -33,7 +33,7 @@ export async function PUT(request : NextRequest , {params}: Params) {
 
         const body = await request.json();
 
-        const {telefono,medio,status,assignedTo } = userSchema.parse(body);
+        const {telefono,medio,status } = userSchema.parse(body);
 
         const user =await prisma.user.update({
             where: {
@@ -42,8 +42,8 @@ export async function PUT(request : NextRequest , {params}: Params) {
             data: {
                 telefono,
                 medio,
-                status,
-                assignedTo
+                status
+                
             }
         });
 

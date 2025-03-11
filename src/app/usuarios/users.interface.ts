@@ -5,5 +5,4 @@ export interface User {
     telefono: string;
     medio: string;
     status: UserStatus;
-    assignedTo?: string;
 }
