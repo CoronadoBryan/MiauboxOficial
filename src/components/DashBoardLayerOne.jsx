@@ -1,5 +1,4 @@
 import GeneratedContent from "./child/GeneratedContent";
-import LatestRegisteredOne from "./child/LatestRegisteredOne";
 import SalesStatisticOne from "./child/SalesStatisticOne";
 import TopCountries from "./child/TopCountries";
 import TopPerformerOne from "./child/TopPerformerOne";
@@ -13,7 +12,7 @@ const DashBoardLayerOne = () => {
       {/* UnitCountOne */}
       <UnitCountOne />
 
-      <section className='row gy-4 mt-1'>
+      <section className="row gy-4 mt-1">
         {/* SalesStatisticOne */}
         <SalesStatisticOne />
 
@@ -22,9 +21,6 @@ const DashBoardLayerOne = () => {
 
         {/* UsersOverviewOne */}
         <UsersOverviewOne />
-
-        {/* LatestRegisteredOne */}
-        <LatestRegisteredOne />
 
         {/* TopPerformerOne */}
         <TopPerformerOne />

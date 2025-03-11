@@ -1,5 +1,5 @@
 import Breadcrumb from "@/components/Breadcrumb";
-import FormLayoutLayer from "@/components/FormLayoutLayer";
+import FormCreateUser from "@/components/FormCreateUser";
 import MasterLayout from "@/masterLayout/MasterLayout";
 
 export const metadata = {
@@ -16,8 +16,8 @@ const Page = () => {
         {/* Breadcrumb */}
         <Breadcrumb title='Input Layout' />
 
-        {/* FormLayoutLayer */}
-        <FormLayoutLayer />
+        {/* formulario para crear usuerio */}
+        <FormCreateUser />
       </MasterLayout>
     </>
   );

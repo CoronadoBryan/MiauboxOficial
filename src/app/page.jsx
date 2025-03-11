@@ -11,8 +11,8 @@ export const metadata = {
 const Page = () => {
   return (
     <>
+    <MasterLayout>
       {/* MasterLayout */}
-      <MasterLayout>
         {/* Breadcrumb */}
         <Breadcrumb title='AI' />
 

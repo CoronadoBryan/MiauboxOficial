@@ -136,7 +136,7 @@ const MasterLayout = ({ children }) => {
                   icon='solar:home-smile-angle-outline'
                   className='menu-icon'
                 />
-                <span>Dashboard</span>
+                <span>Miaubox Panel</span>
               </Link>
               <ul className='sidebar-submenu'>
                 <li>
@@ -145,16 +145,25 @@ const MasterLayout = ({ children }) => {
                     className={pathname === "/" ? "active-page" : ""}
                   >
                     <i className='ri-circle-fill circle-icon text-primary-600 w-auto' />
-                    AI
+                    Estadisticas
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href='/index-2'
-                    className={pathname === "/index-2" ? "active-page" : ""}
+                    href='/UserCreate'
+                    className={pathname === "/UserCreate" ? "active-page" : ""}
                   >
                     <i className='ri-circle-fill circle-icon text-warning-main w-auto' />{" "}
-                    CRM
+                    Crear Usuarios
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href='/usuarios'
+                    className={pathname === "/usuarios" ? "active-page" : ""}
+                  >
+                    <i className='ri-circle-fill circle-icon text-warning-main w-auto' />{" "}
+                    usuarios
                   </Link>
                 </li>
                 <li>
