@@ -6,7 +6,8 @@ export default function FormCreateUser() {
   const [formData, setFormData] = useState({
     telefono: "",
     medio: "",
-    status: "ACTIVE"
+    observacion: "",
+    status: "ACTIVE",
   });
 
   const handleSubmit = async (e) => {
@@ -28,7 +29,8 @@ export default function FormCreateUser() {
       setFormData({
         telefono: "",
         medio: "",
-        status: "ACTIVE"
+        observacion: "",
+        status: "ACTIVE",
       });
     } catch (error) {
       console.error("Error:", error);
@@ -80,6 +82,19 @@ export default function FormCreateUser() {
                   </select>
                 </div>
                 <div className="col-12">
+                  <label className="form-label">Observacion</label>
+                  <input
+                    type="text"
+                    name="observacion"
+                    className="form-control"
+                    value={formData.observacion}
+                    onChange={handleChange}
+                    placeholder="Ingrese el medio"
+                    required
+                  />
+                </div>
+
+                <div className="col-12">
                   <label className="form-label">Estado</label>
                   <select
                     name="status"
@@ -92,7 +107,7 @@ export default function FormCreateUser() {
                     <option value="INACTIVE">Inactivo</option>
                   </select>
                 </div>
-              
+
                 <div className="col-12">
                   <button type="submit" className="btn btn-primary-600">
                     Crear Usuario

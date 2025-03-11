@@ -55,6 +55,7 @@ export default async function  DashBoardLayerTwo () {
                           <th scope="col">ID</th>
                           <th scope="col">Teléfono</th>
                           <th scope="col">Medio</th>
+                          <th scope="col">Observación</th>
                           <th scope="col" className="text-center">
                             Estado
                           </th>
@@ -69,6 +70,7 @@ export default async function  DashBoardLayerTwo () {
                             <td>{user.id}</td>
                             <td>{user.telefono}</td>
                             <td>{user.medio}</td>
+                            <td>{user.observacion}</td>
                             <td className="text-center">
                               <span
                                 className={`bg-${

@@ -17,13 +17,14 @@ export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
 
-    const { telefono, medio, status } = userSchema.parse(body);
+    const { telefono, medio, status,observacion } = userSchema.parse(body);
 
     await prisma.user.create({
       data: {
         telefono,
         medio,
         status,
+        observacion
       },
     });
 
